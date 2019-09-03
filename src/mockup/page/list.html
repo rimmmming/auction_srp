@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="no-js iem7" lang="ko-KR"><![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--><html class="no-js" lang="ko-KR"><!--<![endif]-->
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta http-equiv="x-dns-prefetch-control" content="on"/>
+    <link rel="dns-prefetch" href="//pics.auction.co.kr"/>
+    <link rel="dns-prefetch" href="//script.auction.co.kr"/>
+    <link rel="dns-prefetch" href="//image.auction.co.kr"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.5,minimum-scale=1.0,user-scalable=yes"/>
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta property="og:type"               content="website" />
+    <meta property="og:url"                content="http://search.auction.co.kr/search/search.aspx?keyword=%B6%F3%B8%E9&itemno=&nickname=&frm=hometab&dom=auction&isSuggestion=No&retry=&Fwk=%B6%F3%B8%E9&acode=SRP_SU_0100&arraycategory=&encKeyword=%25EB%259D%25BC%25EB%25A9%25B4" />
+    <meta property="og:title"              content="쇼핑은 옥션 - 상품 검색/카테고리 페이지" />
+    <meta property="og:description"        content="XXX 키워드에 대한 검색한 결과" />
+    <meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+    <meta property="og:image:alt"          content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="http://pics.auction.co.kr/common/static/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="http://pics.auction.co.kr/common/static/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="http://pics.auction.co.kr/common/static/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="http://pics.auction.co.kr/common/static/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="http://pics.auction.co.kr/common/static/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="http://pics.auction.co.kr/common/static/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="http://pics.auction.co.kr/common/static/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="http://pics.auction.co.kr/common/static/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="http://pics.auction.co.kr/common/static/apple-touch-icon-180x180.png"/>
+    <link rel="icon" type="image/png" href="http://pics.auction.co.kr/common/static/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="http://pics.auction.co.kr/common/static/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="http://pics.auction.co.kr/common/static/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="http://pics.auction.co.kr/common/static/android-icon-192x192.png" sizes="192x192"/>
+
+    <title data-zeplin-url="@@zeplinUrl">스노우 화이트 카테고리 리스트 페이지</title>
+    <!-- old repository Publish.IAC.Mobile 이전 전까지 화면 확인용으로 호출 -->
+    <link rel="stylesheet" href="//script.auction.co.kr/mobile/style/css/common_frame.css">
+    <link rel="stylesheet" href="../app.css">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://script.auction.co.kr/style/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- UI script namespace init -->
+    <script>
+        var AUCTION = {
+            UI: {
+                MODEL_AND_VIEW: {
+                    // 현재 페이지의 고유 식별자를 담아주세요.
+                    CURRENT_PAGE: '/list'
+                },
+
+                APP: {
+                    COMMON: {
+                        UTIL: {},
+                        COMPONENT: {}
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<!-- 식별자 처리 wiki 참고 : https://wiki.ebaykorea.com/pages/viewpage.action?pageId=123437454 -->
+<body id="" class="service__snowwhite page__list">
+
+
+<!-- 헤더 -->
+<!--
+    아래 UI는 Public.IAC.Mobile 저장소에서 관리합니다.
+    저장소 변경 전까진 해당 UI들은 read만 담당하고 유지보수는 Public.IAC.Mobile 에서 진행합니다.
+    작업시 유의해 주시고 원본 파일이 수정되면 동기화(html, css)가 필요합니다.
+-->
+<div class="imHeader">
+    <!-- # Public.IAC.Mobile -> /mobile/html/_blocks/header-srp.html -->
+
+    <!-- header -->
+    <header id="header"><div class="bx_hd_blank" style="display:none;height:48px"></div>
+        <!-- Header Top -->
+        <div class="header_wrap header_fix">
+            <h1 class="h_logo">
+                <a href="#" class="sp_hd">옥션</a>
+            </h1>
+            <a href="#" class="btn_search sp_hd">검색</a>
+            <div id="search_box" class="search_box focus">
+                <div class="inp_seach">
+                    <input type="text" placeholder="검색어 입력" value="파스타 소스 이탈리안 포크 파마산치즈 생크림 휘핑크림" id="keyword" class="inp search-box_text-field">
+                    <button type="button" class="btn_del sp_hd">삭제</button>
+                </div>
+                <button type="submit" class="btn_sch_submit sp_hd">검색</button>
+                <div class="keyword_swipe">
+                    <ul>
+                        <li><span><button class="word">파스타</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">소스</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">이탈리안</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">포크</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">파마산치즈</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">생크림</button><button class="del sp_hd">삭제</button></span></li>
+                        <li><span><button class="word">휘핑크림</button><button class="del sp_hd">삭제</button></span></li>
+                        <li class="inp_blank search-box_text-field" style="width: 24px;">검색</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn_sch_cancel sp_hd search-box_button--cancel">취소</a>
+            </div>
+            <a href="#" class="btn_cart sp_hd">장바구니<em class="cart_num">99</em></a>
+        </div>
+        <!-- //Header Top -->
+    </header>
+
+    <!-- # Public.IAC.Mobile -> /mobile/html/_blocks/search-keywords.html -->
+
+    <div class="search-keywords">
+        <div class="search-keywords_container">
+            <ul class="tab-list col-2">
+                <li class="tab-list_item active">
+                    <a href="#topKeywords" class="button">인기검색어</a><!-- 2014-12-29 mod: button class 추가 -->
+                </li>
+                <li class="tab-list_item">
+                    <a href="#keywordHistory" class="button">최근검색어</a><!-- 2014-12-29 mod: button class 추가 -->
+                </li>
+            </ul>
+            <div class="tab-panel active" id="topKeywords">
+                <h2 class="tab-panel_title">인기검색어</h2>
+                <ol class="keyword-list--top">
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="1">
+                            <span class="keyword-list_item_name">헤나천연염색약 닥터 헤나천연염색약 닥터</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="2">
+                            <span class="keyword-list_item_name">크록스</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="3">
+                            <span class="keyword-list_item_name">블라우스</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-down">하락</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="4">
+                            <span class="keyword-list_item_name">키즈</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-same">-</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="5">
+                            <span class="keyword-list_item_name">냄비받침 인기모델총집합</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="6">
+                            <span class="keyword-list_item_name">타조털먼지털이 좋은제품</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="7">
+                            <span class="keyword-list_item_name">크록스</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="8">
+                            <span class="keyword-list_item_name">블라우스</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-down">하락</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="9">
+                            <span class="keyword-list_item_name">키즈</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-same">-</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="" data-keyword-top="10">
+                            <span class="keyword-list_item_name">로엠</span>
+                            <span class="keyword-list_item_up-down">
+                                                    <i class="icon--keyword-up">상승</i>
+                                <!-- 2014-12-29 mod: 수치값 삭제 -->
+                                                </span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="tab-panel" id="keywordHistory">
+                <h2 class="tab-panel_title">최근검색어</h2>
+
+                <!-- 2015-01-28 add: 최근검색어 없을 경우 -->
+                <div class="keyword-non-data">
+                    <p class="keyword-non-data_txt">최근검색어가 없습니다</p>
+                </div>
+                <!-- /2015-01-28 add: 최근검색어 없을 경우 -->
+
+                <ul class="keyword-list--history">
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">청바지</span>
+                            <!-- 2014-12-29 mod: 삭제 <span class="keyword-list_item_date">07.26</span> -->
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">나이키 루나</span>
+                            <!-- 2014-12-29 mod: 삭제 <span class="keyword-list_item_date">07.26</span> -->
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                            <!-- 2014-12-29 mod: 삭제 <span class="keyword-list_item_date">07.26</span> -->
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                    <li class="keyword-list_item">
+                        <a href="">
+                            <span class="keyword-list_item_name">닌자고</span>
+                        </a>
+                        <button type="button" class="button--icon keyword-list_item_del">검색어 삭제</button>
+                    </li>
+                </ul>
+                <div class="keyword-history-remove">
+                    <button type="button" class="button--normal">최근검색어 전체삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- # Public.IAC.Mobile -> /mobile/html/_blocks/search-recommendation.html -->
+
+
+    <!-- 2014-12-29 mod: 추천 검색어 -->
+    <div class="search-recommend" id="searchRecommend">
+        <h2 class="for-a11y">추천 검색어</h2>
+
+        <!-- 2014-12-29 add: 추천검색 없음 추가 -->
+        <div class="no-resultant">
+            <p class="no-resultant_txt">추천 검색어가 없습니다</p>
+        </div>
+        <!-- /2014-12-29 add: 추천검색 없음 추가 -->
+
+        <ul class="keyword-list--recommend">
+            <li class="keyword-list_item has-category">
+                <a href="" class="recommend-keyword">
+                    <mark>나이키</mark> 추천카테고리
+                </a>
+                <ul class="keyword-category">
+                    <li class="keyword-category_item">
+                        <a href="">운동화/스니커즈 &gt; 브랜드 운동화</a>
+                    </li>
+                    <li class="keyword-category_item">
+                        <a href="">스포츠의류/트레이닝 &gt; 스포츠브랜드의류</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="keyword-list_item">
+                <a href="" class="recommend-keyword">
+                    운동화
+                </a>
+                <a href="" class="button--icon keyword-list_item_link">이동</a>
+            </li>
+            <li class="keyword-list_item">
+                <a href="" class="recommend-keyword">
+                    <mark>나이키</mark>슬리퍼
+                </a>
+                <a href="" class="button--icon keyword-list_item_link">이동</a>
+            </li>
+            <li class="keyword-list_item">
+                <a href="" class="recommend-keyword">
+                    <mark>나이키</mark>반바지
+                </a>
+                <a href="" class="button--icon keyword-list_item_link">이동</a>
+            </li>
+            <li class="keyword-list_item">
+                <a href="" class="recommend-keyword">
+                    빅사이즈<mark>나이키</mark>
+                </a>
+                <a href="" class="button--icon keyword-list_item_link">이동</a>
+            </li>
+            <li class="keyword-list_item">
+                <a href="" class="recommend-keyword">
+                    키즈<mark>나이키</mark>
+                </a>
+                <a href="" class="button--icon keyword-list_item_link">이동</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /2014-12-29 mod: 추천 검색어 -->
+</div>
+
+<!-- 컨텐츠 -->
+<!--
+    컨텐츠 내부 UI 레이아웃 상태 관리 클래스
+
+    리스트뷰 : state--content_view_type__list
+    갤러리뷰 : state--content_view_type__gallery
+-->
+<div id="content" class="state--content_view_type__list">
+    <!-- 컨텐츠 컨테이너 -->
+    <div class="section--content_body_container">
+        
+        <!-- 컨텐츠 상태 정보 모듈 : 선택된 필터, 정렬, 레이아웃 상태 표시 -->        
+        <div id="region--content_status_information">   
+            <div class="section--module_wrap">
+                <div class="section--search_relative_information section--relative_keywords_container">
+                    <h3 class="text--region_title">검색결과안내</h3>
+                    <div class="section--sub_category type_lp">
+                        <ul class="list--sub_category_keywords">
+                            <li class="item"><a href="#" class="link on">전체</a></li>
+                            <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+                            <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+                            <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+                            <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+                            <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="section--search_relative_information section--content_information_bar_container">
+                    <div class="text--search_result">
+                        <span class="text--item_count result--text_color">56,537</span><span class="text--description"><em class="result--text_color">개</em>의 검색 결과</span>
+                    </div>
+                    <div class="section--select_information">
+                        <div class="section--select_option">
+                            <button type="button" class="link--button_sort">정렬</button>
+                            <div class="sort--option_box">
+                                <ul class="sort--option_select">
+                                    <li class="item">
+                                        <a href="#" class="link">옥션랭킹순</a><button type="button" class="button--notification_advertisement">광고포함</button>
+                                        <span class="section--notification_advertisement">
+                                            <span class="text--notification_advertisement">
+                                            옥션랭킹순은 광고구매여부, 판매실적, 검색정확도, 고객이용행태, 서비스 품질 등을 기준으로 정렬됩니다.
+                                            찬스쇼핑, 파워클릭 영역은 광고입찰가순으로 전시됩니다.
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="item"><a href="#" class="link">판매인기순</a></li>
+                                    <li class="item item--active"><a href="#" class="link">낮은가격순</a></li>
+                                    <li class="item"><a href="#" class="link">만족도높은순</a></li>
+                                    <li class="item"><a href="#" class="link">신규등록순</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="link--button_filter link_active">필터</button>         
+                </div>                
+                <div class="section--search_relative_information section--content_information_bar2_container">
+                    <div class="text--search_result">
+                    <strong class="text--item_count result--text_color">상품번호</strong><strong class="text--item_count result--text_color">B548642027</strong><span class="text--description">검색 결과</span>
+                    </div>                    
+                </div>       
+                <div class="section--module_wrap">
+                    <div class="section--search_relative_information section--selected_keywords_container">
+                        <div class="component--filter filter_on">
+                            <h3 class="text--region_title">필터검색결과안내</h3>
+                            <div class="section--selected_keywords">
+                                <ul class="list--selected_keywords filter_result">
+                                    <li class="item"><a href="#" class="link">써큘레이터<span class="ir">닫기</span></a></li>
+                                    <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+                                    <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+                                    <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+                                    <li class="item"><button type="button" class="button__reset"><span class="ir">새로고침</span></button></li>
+                                </ul>
+                            </div>
+                        </div>                                                            
+                    </div>
+                </div>                         
+            </div>
+        </div>
+
+        <!-- 상품, 기획전등 컨텐츠 모듈 -->
+        <div id="region--content_body">
+            <div id="section--inner_content_body_container">
+                <div class="section--module_wrap">
+                    <div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">                                              
+            <div class="section--itemcard">
+                <div class="section--component_title">
+                    <a class="section--banner_link" href="#"><span class="ir">스마일배송</span><span class="section--banner_text">오늘주문 내일도착</span></a>
+                </div>                    
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">9,999</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                    
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                            
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_info">
+                        <span class="text--info_title">사용면적</span><span class="text--info_parameter">39.6m</span>
+                        <span class="text--info_title">필터</span><span class="text--info_parameter">프리퀄필터, 탈취필터</span>
+                    </span>
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>        
+</div>
+    
+<div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="//hi.esmplus.com/b/2018/11/29/15434841548027qmvwst.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                                        
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>   
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>
+</div>            
+
+<div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">           
+        <div class="section--itemcard_box">     
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>    
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                                                                                                                                                            
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>                                              
+            </div>   
+        </div>    
+    </div>    
+</div>
+
+<div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">  
+        <div class="section--itemcard_box">                      
+            <div class="section--itemcard">
+                <div class="itemcard--inner">                
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand"></span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>  
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                                            
+                    </a>     
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                                                                    
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>                                          
+            </div>     
+        </div>               
+    </div>    
+</div>            
+
+<div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">                        
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">   
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <span class="text--seller">월</span>
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>                                            
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                                            
+                    </a>   
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                                                                    
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>        
+            </div>      
+        </div>             
+    </div>
+</div>    
+
+<div class="component component--item_card type-smiledelivery element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">
+                <div class="itemcard--inner">                   
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <span class="text--seller">할부원금</span>
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>  
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">10만+</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                                            
+                    </a>      
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                                                                    
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>   
+                <div class="section--component_more">
+    <a class="section--banner_link" href="#"><span class="section--banner_text">스마일배송 검색결과 더보기</span></a>
+</div>                                      
+            </div>                       
+        </div>              
+    </div>
+</div>                        
+                </div>                
+                <div class="section--module_wrap">
+                    <div class="component component--promotion_link">
+    <h4 class="text--module_title">픽사 배너</h4>
+    <a href="#" class="promotion_link">
+        <span class="promotion__img"><img src="/image/single/snowwhite/dummy/sample_logo.jpg" alt="대체텍스트"></span>                         
+        <dl class="promotion__info">
+            <dt class="promotion__info__title">픽사</dt>
+            <dd class="promotion__info__text">
+                <span class="info__text">모든 디즈니 캐릭터들 다 모았다!모든 디즈니 캐릭터들 다 모았다!모든 디즈니 캐릭터들 다 모았다!모든 디즈니 캐릭터들 다 모았다!모든 디즈니 캐릭터들 다 모았다!</span>                
+            </dd>
+        </dl>
+    </a>
+</div>     
+                </div>                            
+                <div class="section--module_wrap">         
+                    <div class="component component--item_card type--general element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">                                              
+            <div class="section--itemcard">
+                <div class="section--component_title">
+    <span class="section--banner_text">파워클릭</span>
+    <button class="button--power_click"><span class="ir">광고안내레이어 열기</span></button>
+    <div class="section--layer_information">
+        <strong class="information--title">파워클릭이란?</strong>
+        <span class="information--text">파워클릭 광고를 구상한 상품으로 입찰가순으로 전시됩니다.</span>
+        <button type="button" class="button--close_layer">
+            <span class="ir">광고배너 안내 레이어 닫기</span>
+        </button>
+    </div>                      
+</div>                                  
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>
+                                <span class="text--addinfo_today">오늘출발</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">9,999</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                                                                                                                                                                                                            
+                </div>                
+                <span class="section--related_item">
+                    <span class="related--item_info">
+                        <span class="text--info_title">사용면적</span><span class="text--info_parameter">39.6m</span>
+                        <span class="text--info_title">필터</span><span class="text--info_parameter">프리퀄필터, 탈취필터</span>
+                    </span>
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>        
+</div>
+
+<div class="component component--item_card type--general element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>
+                        </span>                                        
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>  
+                    <button class="button--cart element-info-cart"><span class="icon--cart"><span class="ir">장바구니담기</span></span></button>                
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>
+</div>            
+<div class="component component--sd_banner">
+    <h4 class="text--module_title">프로모션 배너</h4>
+    <a href="#" class="link--item" style="background-color:#e6f6d2">
+        <img src="/image/single/snowwhite/dummy/sm-banner-01_2x.png" class="banner--img" alt="대체텍스트">
+    </a>
+</div>   
+<div class="component component--item_card type--general element-info">
+    <div class="itemcard">           
+        <div class="section--itemcard_box">     
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                                <span class="text--addinfo">스마일배송</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                                                                                                                                                                                                                                                                                                                                                                    
+                        </span>    
+                    </a>  
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>                                             
+            </div>   
+        </div>    
+    </div>    
+</div>
+
+<div class="component component--item_card type--general element-info">
+    <div class="itemcard">  
+        <div class="section--itemcard_box">                      
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand"></span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">홈플러스 당일배송</span>
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                            
+                    </a>        
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>                                       
+            </div>     
+        </div>               
+    </div>    
+</div>            
+<div class="component component--sd_banner">
+    <h4 class="text--module_title">프로모션 배너</h4>
+    <a href="#" class="link--item" style="background-color:#e0ecfe">
+        <img src="/image/single/snowwhite/dummy/sm-banner-02_2x.png" class="banner--img" alt="대체텍스트">
+    </a>
+</div>   
+<div class="component component--item_card type--general element-info">
+    <div class="itemcard">                        
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <span class="text--seller">월</span>
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">의무약정 36개월</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                            
+                    </a>   
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>        
+            </div>      
+        </div>             
+    </div>
+</div>    
+
+<div class="component component--item_card type--general element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <span class="text--seller">할부원금</span>
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">10만+</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                            
+                    </a>    
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>       
+            </div>           
+        </div>              
+    </div>
+</div>
+<!-- [D] sd-banner 있을때  -->
+<div class="section--sd_module item--bg_type1">
+    <p class="text--sd_module">많이 찾으시는 브랜드입니다.</p>
+    <div class="section--relative_keywords">
+        <ul class="list--relative_keywords">
+            <li class="item"><a href="#" class="link">삼성전자</a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+            <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+            <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+        </ul>
+    </div>
+</div>
+                </div>
+                <div class="section--module_wrap">
+                    <div class="component component--item_card type--chance element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">                                              
+            <div class="section--itemcard">
+                <div class="section--component_title">
+    <span class="section--banner_text">찬스쇼핑</span>
+    <button class="button--power_click"><span class="ir">광고안내레이어 열기</span></button>
+    <div class="section--layer_information">
+        <strong class="information--title">찬스쇼핑이란?</strong>
+        <span class="information--text">찬스쇼핑 광고를 구매한 상품으로 입찰가순으로 전시됩니다.</span>
+        <button type="button" class="button--close_layer">
+            <span class="ir">광고배너 안내 레이어 닫기</span>
+        </button>
+    </div>                      
+</div>                               
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>
+                                <span class="text--addinfo_today">오늘출발</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">9,999</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                                                                                                                                                                                    
+                        </span>
+                    </a>                
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                        
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_info">
+                        <span class="text--info_title">사용면적</span><span class="text--info_parameter">39.6m</span>
+                        <span class="text--info_title">필터</span><span class="text--info_parameter">프리퀄필터, 탈취필터</span>
+                    </span>
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>        
+</div>
+    
+<div class="component component--item_card type--chance element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                        
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>
+</div>            
+
+
+
+                    <div class="section--sd_module item--bg_type3">
+    <p class="text--sd_module">인기있는 백화점/몰 에서 구매해보세요!</p>
+    <div class="section--relative_keywords">
+        <ul class="list--relative_keywords">
+            <li class="item"><a href="#" class="link">삼성전자</a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+            <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+            <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+        </ul>
+    </div>
+</div>
+                    <div class="section--sd_module item--bg_type4">
+    <p class="text--sd_module">‘용량’으로 찾아보세요.</p>
+    <div class="section--relative_keywords">
+        <ul class="list--relative_keywords">
+            <li class="item"><a href="#" class="link">삼성전자</a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+            <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+            <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+        </ul>
+    </div>
+</div>
+                    <div class="section--sd_module item--bg_type4 option_a">
+    <p class="text--sd_module">추천 필터로 원하는 상품을 찾아보세요!.</p>
+    <div class="section--relative_keywords">
+        <ul class="list--relative_keywords">
+            <li class="item"><a href="#" class="link">A삼성전자</a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+            <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+            <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+            <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+            <li class="item"><a href="#" class="link">한번에 찾기  〉</a></li>
+        </ul>
+    </div>
+</div>
+                    <div class="section--sd_module item--bg_type2">
+    <div class="text--sd_module">
+        <span class="text--sd_title">선풍기</span> <span class="text--sd_text">관련 추천 카테고리를 찾아보세요</span>
+    </div>
+    <div class="section--relative_keywords">
+        <ul class="list--relative_keywords">
+            <li class="item"><a href="#" class="link">패브릭커버 〉 선풍기커버</a></li>
+            <li class="item"><a href="#" class="link">대형가전 〉 프로젝터</a></li>
+            <li class="item"><a href="#" class="link">패브릭커버 〉 선풍기커버</a></li>
+            <li class="item"><a href="#" class="link">대형가전 〉 프로젝터</a></li>
+            <li class="item"><a href="#" class="link">패브릭커버 〉 선풍기커버</a></li>
+            <li class="item"><a href="#" class="link">대형가전 〉 프로젝터</a></li>
+        </ul>
+    </div>
+</div>
+                </div>                
+                <div class="section--module_wrap">
+                    <div class="component component--item_card type--premium element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">                                              
+            <div class="section--itemcard">
+                <div class="section--component_title">
+    <span class="section--banner_text">프리미엄등록</span>
+    <button class="button--power_click"><span class="ir">광고안내레이어 열기</span></button>
+    <div class="section--layer_information">
+        <strong class="information--title">프리미엄등록이란?</strong>
+        <span class="information--text">프리미엄 광고를 구매한 상품으로 옥션랭킹순으로 전시됩니다</span>
+        <button type="button" class="button--close_layer">
+            <span class="ir">광고배너 안내 레이어 닫기</span>
+        </button>
+    </div>                      
+</div>                               
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>
+                                <span class="text--addinfo_today">오늘출발</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">9,999</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                                                                                                                                                                                    
+                        </span>
+                    </a>                
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                        
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_info">
+                        <span class="text--info_title">사용면적</span><span class="text--info_parameter">39.6m</span>
+                        <span class="text--info_title">필터</span><span class="text--info_parameter">프리퀄필터, 탈취필터</span>
+                    </span>
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>        
+</div>
+    
+<div class="component component--item_card type--premium element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                        
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>
+</div>            
+
+
+
+                </div>                
+                <div class="section--module_wrap">
+                    <div class="component component--item_card type--premium element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">                                              
+            <div class="section--itemcard">
+                <div class="section--component_title">
+    <span class="section--banner_text">일반등록</span>
+</div>                               
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>
+                                <span class="text--addinfo_today">오늘출발</span>                                               
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">9,999</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                                                                                                                                                                                    
+                        </span>
+                    </a>                
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>                                        
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_info">
+                        <span class="text--info_title">사용면적</span><span class="text--info_parameter">39.6m</span>
+                        <span class="text--info_title">필터</span><span class="text--info_parameter">프리퀄필터, 탈취필터</span>
+                    </span>
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>        
+</div>
+    
+<div class="component component--item_card type--premium element-info">
+    <div class="itemcard">            
+        <div class="section--itemcard_box">    
+            <div class="section--itemcard">
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">배송비2,500원</span>                                                
+                            </span>
+                            <span class="section--itemcard_info_score">
+                                <span class="score--buycnt">
+                                    <span class="text--buycnt">구매</span><span class="text--buycnt__num">1,734</span><span class="ir">건</span>
+                                </span>
+                                <span class="score--awards"><span class="ir">만족도</span><span class="text--awards">4.8</span><span class="ir">점</span></span>                                                
+                            </span>                        
+                        </span>                                        
+                    </a>
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>
+                <span class="section--related_item">
+                    <span class="related--item_button">
+                        <button class="button--related_item"><span class="text--related"><span class="text--related__01">연관</span><span class="text--related__02">상품</span></span><span class="text--num">6개</span></button>
+                    </span>
+                </span>                                                                        
+            </div>
+        </div>
+    </div>
+</div>            
+
+
+
+                </div>
+                <div class="section--module_wrap">
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#DF9E06">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="thumb--circle" alt="">
+            </span>
+        </div>                                
+    </a>                    
+</div>                  
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#26b066">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="" alt="">
+            </span>
+        </div>                                
+    </a>                    
+</div>                                      
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#b0008f">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="" alt="">
+            </span>
+        </div>                                
+    </a>                    
+</div>                    
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#e43137">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="thumb--circle" alt="">
+            </span>
+        </div>                                
+    </a>                    
+</div>                  
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#df9e06">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="" alt="">
+            </span>
+        </div>                                
+    </a>                    
+</div>                    
+                    <div class="component component--hanbando_banner">
+    <a href="#" class="link--item">                    
+        <div class="promotion--item_box">
+            <span class="promotion--tag" style="background-color:#df9e06">기획전</span>
+            <p class="promotion--text">한반도 기획전 모듈 가전제품 다이슨 공식몰</p>
+            <p class="promotion--date">2018.10.19~2018.10.29</p>
+            <span class="thumb--box">
+                <img src="/image/single/snowwhite/dummy/item_img.jpg" class="thumb--circle" alt="">
+            </span>
+            <span class="thumb--coupon">
+                <img src="/image/single/snowwhite/dummy/coupon.png" class="thumb--circle" alt="10%할인쿠폰">
+            </span>
+        </div>                                
+    </a>                    
+</div>                    
+                </div>
+                <!-- [D] 슬라이드 파워클릭 -->
+                <div class="section--module_wrap">              
+                    <div class="component component--slide_scrollbar">
+    <div class="section--component_title type_white">
+    <span class="section--banner_text">파워클릭</span>
+    <button class="button--power_click"><span class="ir">광고안내레이어 열기</span></button>
+    <div class="section--layer_information">
+        <strong class="information--title">파워클릭이란?</strong>
+        <span class="information--text">파워클릭 광고를 구상한 상품으로 입찰가순으로 전시됩니다.</span>
+        <button type="button" class="button--close_layer">
+            <span class="ir">광고배너 안내 레이어 닫기</span>
+        </button>
+    </div>                      
+</div>                
+    <div class="power_click-container">
+        <div class="layer_cont ">
+            <div class="items_list">
+                <ul class="list--power_click">
+                    <li class="item">
+                        <div class="component component--item_card type--slide element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">                 
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/41/b0/8c/41b08cc27.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                        </span>                                            
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>          
+            </div>           
+        </div>              
+    </div>
+</div>
+                    </li>
+                    <li class="item">
+                        <div class="component component--item_card type--slide element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">                 
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="//hi.esmplus.com/b/2018/11/29/15434841548027qmvwst.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                        </span>                                            
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>          
+            </div>           
+        </div>              
+    </div>
+</div>
+                    </li>
+                    <li class="item">
+                        <div class="component component--item_card type--slide element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">                 
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="http://image.auction.co.kr/itemimage/16/c6/70/16c67088c7.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                        </span>                                            
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>          
+            </div>           
+        </div>              
+    </div>
+</div>
+                    </li>
+                    <li class="item">
+                        <div class="component component--item_card type--slide element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">                 
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                        </span>                                            
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>          
+            </div>           
+        </div>              
+    </div>
+</div>
+                    </li>
+                    <li class="item">
+                        <div class="component component--item_card type--slide element-info">
+    <div class="itemcard">          
+        <div class="section--itemcard_box">                  
+            <div class="section--itemcard">                 
+                <div class="itemcard--inner">
+                    <a href="#" class="link--itemcard">
+                        <span class="section--itemcard_img"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>
+                        <span class="section--itemcard_info">
+                            <span class="area--itemcard_title">
+                                <span class="text--brand">오난코리아</span>
+                                <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+                            </span>
+                            <span class="area--itemcard_price">
+                                <span class="price_seller">
+                                    <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+                                </span>
+                            </span>
+                            <span class="section--itemcard_info_add">
+                                <span class="text--addinfo">무료배송</span>
+                            </span>
+                        </span>                                            
+                    </a> 
+                    <button class="button--favorite"><span class="icon--favorite"><span class="ir">관심상품 등록하기</span></span></button>
+                </div>          
+            </div>           
+        </div>              
+    </div>
+</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide--progress">
+            <progress class="slide--progress_bar" max="100" value=""></progress>
+        </div>
+    </div>
+</div>    
+                </div>    
+                <!-- [D] 페이징 -->
+                <div class="section--module_wrap">
+                    <div class="component component--pagination">
+    <div class="pagination--container">
+        <a href="#" class="link--previous_page off"><span class="ir">처음페이지로 이동</span></a>
+        <a href="#" class="link--page on">1<span class="ir">페이지로 이동</span></a>
+        <a href="#" class="link--page">2<span class="ir">페이지로 이동</span></a>
+        <a href="#" class="link--page">3<span class="ir">페이지로 이동</span></a>
+        <a href="#" class="link--page">4<span class="ir">페이지로 이동</span></a>
+        <a href="#" class="link--page">5<span class="ir">페이지로 이동</span></a>
+        <a href="#" class="link--next_page"><span class="ir">다음페이지로 이동</span></a>
+    </div>
+</div>                        
+                </div>             
+                <!-- [D] 만족결과 -->
+                <div class="section--module_wrap">
+                    <div class="section--sd_module item--type_data off">
+    <div class="text--sd_module">
+        <span class="text--sd_title">선풍기</span> <span class="text--sd_text">검색결과 어떠셨어요?</span>
+    </div>
+    <div class="section--relative_keywords">
+        <button class="button--good"><span class="button_text">만족해요</span></button>
+        <button class="button--not_good"><span class="button_text">별로예요</span></button>
+    </div>
+    <div class="section--disable_module">
+        <p class="text--disable_information">참여해 주셔서 감사합니다.</p>
+    </div>
+</div>
+                </div>
+                <div class="section--module_wrap">
+                    <!--[D] 행상관없이 6개 노출 고정 -->
+<div class="section--sd_module item--type_relation">
+    <p class="text--sd_module">연관검색어</p>
+    <div class="section--relative_keywords_flow">
+        <li class="item"><a href="#" class="link">삼성전자11</a></li>
+        <li class="item"><a href="#" class="link">샤오미 선풍기</a></li>
+        <li class="item"><a href="#" class="link">휴대용 선풍기</a></li>
+        <li class="item"><a href="#" class="link">탁상용&amp;핸디 선풍기</a></li>
+        <li class="item"><a href="#" class="link">써큘레이터1</a></li>
+        <li class="item"><a href="#" class="link">써큘레이터2</a></li>
+    </div>
+</div>                                                                               
+                </div>
+                <div class="section--module_wrap">
+                    <div class="component component--section_slide_simple">
+    <div class="section--component_title">
+    <span class="section--banner_text">중고상품</span>
+    <span class="section--more">
+        <a href="#" class="link--more">더보기</a>
+    </span>
+</div>                     
+    <div class="slide--simple_container">
+        <div class="simple--container_scroll">
+            <div class="simple--slide">
+                <div class="simple--item">
+    <a href="#" class="link--simple-item">
+        <span class="section--simple-item"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>        
+        <span class="area--simple-item_title">
+            <span class="text--brand">오난코리아</span>
+            <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+        </span>
+        <span class="simple-item_price">
+            <span class="price_seller">
+                <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+            </span>
+        </span>        
+    </a>
+</div>
+  
+            </div>
+            <div class="simple--slide">
+                    <div class="simple--item">
+    <a href="#" class="link--simple-item">
+        <span class="section--simple-item"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>        
+        <span class="area--simple-item_title">
+            <span class="text--brand">오난코리아</span>
+            <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+        </span>
+        <span class="simple-item_price">
+            <span class="price_seller">
+                <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+            </span>
+        </span>        
+    </a>
+</div>
+  
+            </div>
+            <div class="simple--slide">
+                    <div class="simple--item">
+    <a href="#" class="link--simple-item">
+        <span class="section--simple-item"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>        
+        <span class="area--simple-item_title">
+            <span class="text--brand">오난코리아</span>
+            <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+        </span>
+        <span class="simple-item_price">
+            <span class="price_seller">
+                <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+            </span>
+        </span>        
+    </a>
+</div>
+  
+            </div>
+            <div class="simple--slide">
+                    <div class="simple--item">
+    <a href="#" class="link--simple-item">
+        <span class="section--simple-item"><img src="/image/single/snowwhite/dummy/item_img.jpg" class="image--itemcard" alt=""></span>        
+        <span class="area--simple-item_title">
+            <span class="text--brand">오난코리아</span>
+            <span class="text--title">루메나 N9-FAN STAND 서큘레이터</span>
+        </span>
+        <span class="simple-item_price">
+            <span class="price_seller">
+                <strong class="text--price_seller">2,600</strong><span class="text--unit">원</span>
+            </span>
+        </span>        
+    </a>
+</div>
+  
+            </div>                                
+        </div>
+    </div>                    
+</div>    
+                </div>                
+                <div class="section--module_wrap">
+                    <div class="component component--sponsor_link">
+    <div class="section--component_title type_white">
+    <span class="section--banner_text">스폰서링크</span>
+    <button class="button--power_click"><span class="ir">광고안내레이어 열기</span></button>
+    <div class="section--layer_information">
+        <strong class="information--title">스폰서링크란?</strong>
+        <span class="information--text">제휴사의 광고가 전시되는 영역입니다</span>
+        <button type="button" class="button--close_layer">
+            <span class="ir">광고배너 안내 레이어 닫기</span>
+        </button>
+    </div>                      
+</div>                     
+    <ul class="section--link_list">
+        <li class="item">
+            <span class="section--item_index">1</span>
+            <a href="http://www.naver.com" class="link--sponsor">
+                <dl class="sponsor--info">
+                    <dt class="info--title">한일전기 직영몰 마이한일</dt>
+                    <dd class="info--text">현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤</dd>
+                    <dd class="info--link">http://www.naver.com</dd>
+                </dl>
+            </a>
+        </li>
+        <li class="item">
+            <span class="section--item_index">2</span>
+            <a href="http://www.naver.com" class="link--sponsor">
+                <dl class="sponsor--info">
+                    <dt class="info--title">한일전기 직영몰 마이한일</dt>
+                    <dd class="info--text">현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤</dd>
+                    <dd class="info--link">http://www.naver.com</dd>
+                </dl>
+            </a>
+        </li>
+        <li class="item">
+            <span class="section--item_index">3</span>
+            <a href="http://www.naver.com" class="link--sponsor">
+                <dl class="sponsor--info">
+                    <dt class="info--title">한일전기 직영몰 마이한일</dt>
+                    <dd class="info--text">현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤현장실측 주방설계, 업소주방설비 맞춤제작, 사후관리,주방설비 맞춤</dd>
+                    <dd class="info--link">http://www.naver.com</dd>
+                </dl>
+            </a>
+        </li>                    
+    </ul>
+</div>    
+                </div>
+                <div class="section--module_wrap">
+                    <div class="component component--search_and_match_banner" style="background-color:#45b5ff">
+    <h4 class="text--module_title">서치엔매치 배너</h4>
+    <a href="#" class="link--item">
+        <img src="https://dummyimage.com/720x300/45b5ff/ffffff.png&text=Search+And+Match+Banner" class="banner--img" alt="대체텍스트">
+    </a>
+</div>
+                </div>
+            </div>                    
+        </div>
+    
+
+        <!-- 컨텐츠 필터 모듈 -->
+        <div id="region--content_filter">
+            <div class="section--module_wrap">
+                
+<div class="section--content_filter_container">
+    <div class="content--filter_top">
+    <h3 class="text--filter_title">상세검색</h3>
+</div>
+  
+    <!--// loader -->
+    <div class="section--content_scroll_content">
+        <div class="section--select_view_type">
+    <h4 class="text--text--filter_title">상품보기 방식</h4>
+    <button class="button--type_gallery_view"><span class="ir">갤러리뷰 보기</span></button>
+    <button class="button--type_list_view on"><span class="ir">리스트뷰 보기</span></button>
+</div>    
+        <div class="section--module_wrap">
+            <div class="component--filter">
+    <h3 class="text--region_title">필터검색결과안내</h3>
+    <div class="section--selected_keywords_pannel">
+        <ul class="list--selected_keywords_pannel filter_result">
+            <li class="item"><a href="#" class="link">써큘레이터<span class="ir">닫기</span></a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+            <li class="item"><a href="#" class="link">샤오미 선풍기<span class="ir">닫기</span></a></li>
+            <li class="item"><button type="button" class="button__reset"><span class="ir">새로고침</span></button></li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="section--module_wrap">
+            <div class="component component--filter static name--recommend"> 
+            <p class="text--filter_guide">고객님들이 많이 찾는 검색조건입니다.</p>
+        <div class="filter_content">
+            <ul class="list--recommend_filter">
+                <li class="item--list item--type_category"><a href="#section--category" class="item--link">(계절가전)스탠드형 선풍기</a></li>
+                <li class="item--list item--type_category"><a href="#section--category" class="item--link">(계절가전)스탠드형 선풍기 온풍기온풍기온풍기 온풍기온풍기온풍기</a></li>
+                <li class="item--list item--type_brand"><a href="#section--brand" class="item--link">오뚜기</a></li>
+                <li class="item--list item--type_brand"><a href="#section--brand" class="item--link">파스퇴르</a></li>
+                <li class="item--list item--type_brand"><a href="#section--brand" class="item--link">풀무원</a></li>
+                <li class="item--list item--type_brand"><a href="#section--brand" class="item--link">파스퇴르</a></li>
+                <li class="item--list item--type_pp"><a href="#section--store" class="item--link">현대백화점</a></li>   
+                <li class="item--list item--type_option"><a href="#section--option" class="item--link">색상</a></li>                   
+            </ul>
+        </div>
+
+</div>
+        </div>
+        <div class="section--module_wrap">          
+            <div class="component component--filter type-simple name--select_delivery"> 
+    <div class="filter_content">
+    <div class="section--checkbox_form">
+        <input type="checkbox" name="smiledelivery" id="check--smiledelivery" class="custom_form--checkbox">
+        <label for="check--smiledelivery" class="custom_form--label"><span class="ico">스마일배송</span></label>
+        <input type="checkbox" name="smiledelivery" id="check--delivery_free" class="custom_form--checkbox">
+        <label for="check--delivery_free" class="custom_form--label">무료배송</label>
+    </div>
+</div>
+</div>
+        </div>
+        <div class="section--module_wrap"> 
+            <div class="component component--filter type-toggle name--brand " id="section--brand"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">브랜드</span><span class="filter--toggle-stitle">계절가전,계절가전,계절가전,계절가전,계절가전,계절가전</span></button>                
+        <div class="section--category_group">
+            <ul class="list--category">
+    <li class="list--item">
+        <a href="#" class="link--category">
+            <input type="checkbox" name="checkbox-check-01" id="checkbox-check-01" class="custom_form--checkbox">
+            <label for="checkbox-check-01" class="custom_form--label">PC 1depth 123 dsadsadsad fsafsad</label>
+        </a>
+    </li>
+    <li class="list--item">
+        <a href="#" class="link--category">
+            <input type="checkbox" name="checkbox-check-02" id="checkbox-check-02" class="custom_form--checkbox">
+            <label for="checkbox-check-02" class="custom_form--label">PC  123 dsadsadsad fsafsad</label>
+        </a>
+    </li>                            
+    <li class="list--item button">
+        <button class="button--show_more_filter_as_each_item">더보기</button>
+    </li>
+</ul>                     
+        </div>
+    </div>                
+</div>
+
+        
+        </div>    
+
+        <div class="section--module_wrap"> 
+            <div class="component component--filter type-toggle name--store " id="section--store"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">백화점</span><span class="filter--toggle-stitle">현대백화점</span></button>                
+        <div class="section--category_group">
+            <ul class="list--category">
+    <li class="list--item">
+        <div class="link--category">
+            <div class="name--store--flexbox">
+            	<input type="checkbox" name="store-check-01" id="store-check-01" class="custom_form--checkbox">
+            	<label for="store-check-01" class="custom_form--label"><span class="includ_coupon ellipsis">갤러리아 백화점</span></label><button class="button--store_dc_coupon">30% 쿠폰<span class="ico"></span></button>
+            </div>
+        </div>
+    </li>                        
+    <li class="list--item">
+        <div class="link--category">
+            <div class="name--store--flexbox">
+            	<input type="checkbox" name="store-check-02" id="store-check-02" class="custom_form--checkbox">
+            	<label for="store-check-02" class="custom_form--label"><span class="ellipsis">현대백화점 현대백화점</span></label><button class="button--store_dc_coupon">7% 쿠폰<span class="ico"></span></button>
+            </div>
+        </div>
+    </li>
+	<li class="list--item">
+        <div class="link--category">
+            <div class="name--store--flexbox">
+            	<input type="checkbox" name="store-check-03" id="store-check-03" class="custom_form--checkbox">
+            	<label for="store-check-03" class="custom_form--label nocoupon"><span class="ellipsis">현대백화점 현대백화점 현대백화점</span></label>
+            </div>
+        </div>
+    </li>
+    <li class="list--item button">
+        <button class="button--show_more_filter_as_each_item">더보기</button>
+    </li>
+</ul>                     
+        </div>
+    </div>                
+</div>
+
+
+        </div>            
+
+        <div class="section--module_wrap"> 
+            <div class="component component--filter type-toggle name--option_color " id="section--option"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">색상</span><span class="filter--toggle-stitle">초록색, 금색, 주황색</span></button>                
+        <div class="section--category_group">
+            <ul class="list--category">
+    <li class="list--item">
+        <a href="#" class="link--category">
+            <input type="checkbox" name="color-check-01" id="color-check-01" class="custom_form--checkbox">                                    
+            <label for="color-check-01" class="custom_form--label"><span class="color--chip" style="background-color:#2d9b5a"></span>초록색</label>
+        </a>
+    </li>                        
+    <li class="list--item">
+        <a href="#" class="link--category">
+            <input type="checkbox" name="color-check-02" id="color-check-02" class="custom_form--checkbox">
+            <label for="color-check-02" class="custom_form--label"><span class="color--chip" style="background-color:#fff"></span>흰색</label>
+        </a>
+    </li>                                                    
+    <li class="list--item button">
+        <button class="button--show_more_filter_as_each_item">더보기</button>
+    </li>
+</ul>                     
+        </div>
+    </div>                
+</div>
+
+
+        </div>    
+
+        <div class="section--module_wrap"> 
+            <div class="component component--filter type-toggle name--option " id="section--option"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">용량</span><span class="filter--toggle-stitle">1~4 인용</span></button>                
+        <div class="section--category_group">
+            <ul class="list--category">
+    <li class="list--item">
+        <a href="#" class="link--category">
+            <input type="checkbox" name="option-check-01" id="option-check-01" class="custom_form--checkbox">                                    
+            <label for="option-check-01" class="custom_form--label">1~4인용</label>
+        </a>
+    </li>                        
+    <li class="list--item button">
+        <button class="button--show_more_filter_as_each_item">더보기</button>
+    </li>
+</ul>                     
+        </div>
+    </div>                
+</div>
+
+
+        </div>        
+        <div class="section--module_wrap"> 
+            <!-- [D] 디자인 확인용 UI -->
+            <div class="component component--filter type-toggle name--price " id="section--price"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">가격대 (UI 확인용)</span><span class="filter--toggle-stitle"></span></button>                
+        <div class="section--category_group">
+            
+<div class="section--price mockup">
+    <!-- [D] mockup ui 확인용 코드 :: 리얼배포 X 단순 디자인 참고용 코드 -->
+    <div class="price_container">
+        <h4 class="text--region_title">가격대 금액 설정</h4>           
+        <div class="row">
+            <div class="col-sm-12">
+            <div id="slider-range"></div>
+            </div>
+        </div>
+        <div class="row slider-labels">                     
+            <div class="col-xs-6 caption">
+            <span id="slider-range-value1"></span> <span class="text--money">원</span>
+            </div>
+            <span class="range-mark">~</span>
+            <div class="col-xs-6 text-right caption">
+             <span id="slider-range-value2"></span> <span class="text--money">원</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            <form>
+                <input type="hidden" name="min-value" value="">
+                <input type="hidden" name="max-value" value="">
+            </form>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="button--filter_price "><span class="ir">적용하기</span></button>    
+    <!--// [D] mockup ui 확인용 코드 -->
+</div>                     
+        </div>
+    </div>                
+</div>
+
+
+        </div>                        
+        <div class="section--module_wrap"> 
+            <!-- [D] 개발 및 운영 배포용 html -->
+            <div class="component component--filter type-toggle name--price " id="section--price"> 
+    <div class="filter_content">
+        <button class="button--filter_toggle"><span class="filter--toggle-title">가격대 (개발용)</span><span class="filter--toggle-stitle"></span></button>                
+        <div class="section--category_group">
+            
+<div class="section--price">
+    <!-- [D] 개발/리얼용 코드 (해당 html로 배포및 유지보수, js처리는 리엑트에서 작업) -->
+    <div class="section--price_graph">
+        <!-- [D] padding 값 = 각 써클 좌,우 값과 동일하게 컨트롤 하시면 됩니다. leff:0; right:0 값일때는 class case_min-max 처리 그 이외엔 제거 -->
+        <!-- 버튼이 클릭되지 않아 밖으로 옮겼습니다. -->
+        <button type="button" class="slider--range_circle mini" style="left:0%"><span class="ir">최소금액 설정바</span></button>
+        <button type="button" class="slider--range_circle max" style="right:0%"><span class="ir">최대금액 설정바</span></button>
+        <div class="price--slider case_min-max" style="padding-left:0px;padding-right:0px;">                
+            <div class="slider--range_track"></div>
+        </div>
+    </div>
+    <div class="section--price_form">
+        <span class="price--input_box">
+            <label for="min_price">최소금액</label>
+            <input type="number" id="min_price" placeholder="최소금액" name="minPrice" value="최소금액">
+            <span class="text--money">원</span>
+        </span>
+        <span class="text--hyphen">~</span>
+        <span class="price--input_box">
+            <label for="max_price">최대금액</label>
+            <input type="number" id="max_price" placeholder="최대금액" name="maxPrice" value="최대금액">
+            <span class="text--money">원</span>
+        </span>
+        <button type="button" class="button--filter_price "><span class="ir">적용하기</span></button>
+    </div>
+    <!--// [D] 개발용 코드 (해당 html로 리엑트 처리되어있음) -->
+</div>                     
+        </div>
+    </div>                
+</div>
+
+
+        </div>                
+
+        <div class="section--module_wrap"> 
+            <div class="component component--filter type-static name--search"> 
+    <div class="filter_content">
+    <div class="section--search_form">
+        <input type="text" title="결과내 재검색어 입력폼"  placeholder="결과내 재검색" >
+        <button class="button--search_result"><span class="ir">검색</span></button>
+    </div>
+</div>
+</div>            
+        </div>
+        <div class="section--module_wrap"> 
+            <button type="button" class="button__filter_reset"><span class="ir">필터 초기화</span></button>
+        </div>
+        <div class="section--module_wrap" module-design-id="2027">
+            <div class="section--filter_close">
+                <button type="button" class="button--close_filter_container"><span class="button--close_text">닫기</span></button>
+            </div>
+        </div>  
+    </div>    
+</div>
+                        
+            </div>
+        </div>        
+
+    </div>
+
+    <!-- UI 레이어 컨테이너 -->
+    <div id="portal--layer" class="">
+        <div class="section--associated_item_card_layer">
+    <div class="relate-items_dimmed"></div>
+    <div class="layer_relate-items active">
+        <h2 class="layer_title">
+            <span class="ellipsis">와일드스탁 여성 무지 스니커즈 양말 5족</span>
+            <strong>연관상품18개</strong>
+        </h2>
+        <div class="layer_cont">
+            <div class="items_list">
+                <ul style="width: 1944px;">
+                    <li>
+                        <a>
+                            <span class="thumb">
+                                <img src="http://image.auction.co.kr/itemimage/16/d1/b4/16d1b4a8b2.jpg" alt=""/>
+                            </span>
+                            <p>
+                                <span class="title">와일드스탁 여성 무지 스니커즈 양말 5족</span>
+                                <strong>
+                                    4,900
+                                    <span class="unit">원</span>
+                                </strong>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="thumb">
+                                <img src="http://image.auction.co.kr/itemimage/16/d1/b4/16d1b4a8b2.jpg" alt=""/>
+                            </span>
+                            <p>
+                                <span class="title">와일드스탁 여성 무지 스니커즈 양말 5족</span>
+                                <strong>
+                                    4,900
+                                    <span class="unit">원</span>
+                                </strong>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="thumb">
+                                <img src="http://image.auction.co.kr/itemimage/16/d1/b4/16d1b4a8b2.jpg" alt=""/>
+                            </span>
+                            <p>
+                                <span class="title">와일드스탁 여성 무지 스니커즈 양말 5족</span>
+                                <strong>
+                                    4,900
+                                    <span class="unit">원</span>
+                                </strong>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="progressbar">
+            <progress id="progressBar" max="100" value="26.53"></progress>
+        </div>
+
+        <button type="button" class="close" title="연관상품닫기">연관상품 닫기</button>
+    </div>
+</div>
+    </div>
+</div>
+
+<!-- 스크립트 -->
+<!-- jquery는 개발에서 직접 관리하고 있으므로 해당 페이지에서 마크업 확인 용으로만 호출 합니다. -->
+<script src="http://script.auction.co.kr/Common/library/jquery/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="http://script.auction.co.kr/mobile/style/js/ui.js"></script>
+<script src="//script.auction.co.kr/mobile/style/js/core/common.js"></script>
+
+<script src="../app.js"></script>
+
+<!-- 푸터 -->
+<!--
+    아래 UI는 Public.IAC.Mobile 저장소에서 관리합니다.
+    저장소 변경 전까진 해당 UI들은 read만 담당하고 유지보수는 Public.IAC.Mobile 에서 진행합니다.
+    작업시 유의해 주시고 원본 파일이 수정되면 동기화(html, css)가 필요합니다.
+-->
+
+
+<!--
+    # Public.IAC.Mobile -> /mobile/html/_blocks/bottom-default.html
+-->
+
+<!-- Header Bottom -->
+<div class="bottom_wrap" style="z-index:1000">
+    <div class="bottom_inner">
+        <ul class="nav">
+            <li class="btn_home"><a href="#" class="sp_hd">옥션</a></li>
+            <li class="btn_prev"><a href="#" class="sp_hd">뒤로가기</a></li><!-- [D]비활성 disable 추가-->
+            <li class="btn_next disable"><a href="#" class="sp_hd">앞으로가기</a></li>
+            <li class="btn_menu"><a href="#" class="sp_hd">메뉴</a></li>
+            <li class="btn_my"><a href="#" class="sp_hd">마이페이지</a></li>
+            <li class="recent_wrap"><a href="/mobile/html/myauction/MyAuction--recent-view-items.html" class="sp_hd"><span><img src="//pics.auction.co.kr/mobile/v2/dummy/recently_product_44.jpg" alt="최근본상품"></span></a></li><!--[D] 최근 본 상품 없을 시 nothing 추가 -->
+        </ul>
+    </div>
+    <div class="btn_fix">
+        <button type="button" id="btn_top" class="sp_hd"><span>맨위로 이동</span></button>
+    </div>
+</div>
+<!-- Header Bottom -->
+
+
+<!-- # Public.IAC.Mobile -> /mobile/html/_blocks/footer-v2.html -->
+
+<!-- FOOTER -->
+<div id="imFooter">
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="footer-inner">
+            <!-- 앱설치 이미지 -->
+            <div class="foot-app-install">
+                <a href="#">
+                    <!-- 2015-08-07 mod : foot-app-install.png -> foot-app-install-v2.png -->
+                    <span><img src="//pics.auction.co.kr/mobile/v2/hp/foot-app-install-v2.png" alt="편하게 사자! 옥션 앱 설치하세요"></span>
+                </a>
+            </div>
+            <!-- /앱설치 이미지 -->
+
+            <!-- footer 메뉴 -->
+            <ul class="foot-menu hybrid"><!-- 하이브리드일 경우 hybrid 클래스 추가로 li 2개 width값 조정 -->
+                <li class="foot-item"><a href="#">로그인</a></li>
+                <li class="foot-item"><a href="#">회원가입</a></li>
+                <li class="foot-item"><a href="#">PC버전</a></li>
+                <li class="foot-item"><a href="#">고객센터</a></li>
+            </ul>
+            <!-- /footer 메뉴 -->
+
+            <!-- 회사 정보 -->
+            <div class="foot-info">
+                <ul class="corp-info">
+                    <li class="corp-item">(주)이베이 코리아</li>
+                    <li class="corp-item">대표이사 : 변광윤</li>
+                </ul>
+                <ul class="corp-info">
+                    <li class="corp-item">사업자등록번호 : 220-81-83676</li>
+                    <li class="corp-item">통신판매업신고 강남 10630호</li>
+                </ul>
+                <address class="corp-address">서울시 강남구 테헤란로 152 (역삼동 강남파이낸스센터)</address>
+                <dl class="customer-info">
+                    <dt>이메일 :</dt>
+                    <dd>information@corp.auction.co.kr</dd>
+                </dl>
+                <dl class="customer-info">
+                    <dt>고객센터 :</dt>
+                    <dd>1588-0184(오전9시~오후6시,토요일/공휴일휴무)</dd>
+                </dl>
+                <ul class="policy-link">
+                    <li class="policy-item"><a href="#">사업자정보확인</a></li>
+                    <li class="policy-item"><a href="#">이용약관</a></li>
+                    <li class="policy-item"><a href="#">개인정보취급방침</a></li>
+                </ul>
+                <ul class="warning">
+                    <li class="warning-item">옥션은 통신판매중개자이며 통신판매의 당사자가 아닙니다.</li>
+                    <li class="warning-item">따라서 옥션은 상품 거래 정보 및 거래에 대하여 책임을 지지 않습니다.</li>
+                </ul>
+                <p class="copyright">CopyrightⓒeBay Korea Co,.All rights reserved</p>
+            </div>
+            <!-- /회사 정보 -->
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</div>
+<!-- FOOTER -->
+
+
+</body>
+</html>
