@@ -190,7 +190,6 @@ a:focus, input:focus, button:focus, select:focus, textarea:focus {
     right: 0px;
     width: 48px;
     height: 48px;
-    transform: translateZ(0px);
 }
 #region--content_filter .button--close_filter_container::after {
 	display: none;
@@ -209,6 +208,8 @@ a:focus, input:focus, button:focus, select:focus, textarea:focus {
 	background: rgba(0, 0, 0, 0.32); 
 }
 #region--content_filter.js-filter--fixed .section--content_filter_container {
+	display: block;
+	opacity: 1;
 	right: 0
 }
 #region--content_filter.js-filter--fixed .button--close_filter_container {
@@ -218,6 +219,8 @@ a:focus, input:focus, button:focus, select:focus, textarea:focus {
 	display: block
 }
 .section--content_filter_container {
+	display: none;
+	opacity: 0;
 	position: fixed;
 	top: 0;
 	right: -280px;
@@ -3276,5 +3279,10 @@ display:inline-block;
 	overflow: hidden;
 	color: transparent;
 	font-size: 0;
+}
+.name--select_delivery .filter_content .section--checkbox_form #check--smiledelivery+label img {
+    width: 75px;
+    height: 15px;
+    margin-top: -4px;
 }
 /*# sourceMappingURL=app.css.map */

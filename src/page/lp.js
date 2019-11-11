@@ -1,96 +1,167 @@
 import React, {Component} from 'react';
 import ItemCard from './components/itemcard';
-//mport ItemSort from './components/sort';
+import ItemSort from './components/sort';
 import ItemFilter from './components/filter';
+import FilterLayer from './components/filterLayer';
 import axios from 'axios';
-//import _ from 'lodash';
 
 class Listpage extends Component {
-	constructor(props){
-        super(props);
-        this.state = {
-			itemLists : [],
-			active : false
-        }
-    }
+	state = {
+		renderList: [true,false,false],
+		itemLists : [],
+		itemFavoriteLists : [],
+		itemListsLength : 0,
+		itemFreeDeliveryLists : [],
+		viewTypeNumber : 0,
+		filterToggle:true,
+		filterActive : false,
+		freeDeliveryToggle : false,
+	}
 	_makeItemList = () => {
-        const itemLists = this.state.itemLists.map((itemList, i) => {
+		const number = this.state.itemLists.length;
+        const itemLists = this.state.itemLists.slice(0, number).map((itemList, i) => {
 			return <ItemCard
 				key={i}
+				itemRanking={itemList.ranking}
 				itemImageURL={itemList.ImageURL}
 				itemBrandName={itemList.BrandName}
 				itemGoodsName={itemList.GoodsName}
 				itemSalePrice={itemList.SalePrice}
-				itemDeliveryText={itemList.DeliveryText}
-				itemDeliveryInfo={itemList.DeliveryInfo}
+				itemDeliveryText={itemList.Delivery.DeliveryText}
+				itemDeliveryInfo={itemList.Delivery.DeliveryInfo}
 				itemBuyCount={itemList.BuyCount}
+				IsFavoriteSeller={itemList.IsFavoriteSeller}
+				addFavorite={this.addFavorite}
+				favoriteToggle={this.state.favoriteToggle}
 			/>
 		})
         return itemLists
-    }
+	}
 
     _callApi = () => {
         return axios('./SearchJson.json')
         .then(({ data })=> {
-            //console.log(data.Item);
-            this.setState(
-    			{ itemLists: data.Item }
-            );
+            this.setState({ 
+				itemLists: data.Item
+			});
         })
 		.catch(err => console.log(err))
 	}
 
-	_typeChangeFunc(){
+	//필터 온오프 클래스 불린값 설정 함수
+	filterToggle = () => {
+		//const toggle = this.state.filterActive ? 'false' : 'true'
 		this.setState({
-            active : !this.state.active
-        })
+			filterActive : !this.state.filterActive
+		})
 	}
-    
+
+	// 필터 레이어 닫기 함수
+	layerClose = () => {
+		this.setState({
+			filterActive : false
+		})
+	}
+
+	// 리스트뷰 타입 넘버 받아오는 함수
+	viewTypeFunc = (typeNumber) => {
+		this.setState({
+			viewTypeNumber : typeNumber
+		})
+	}
+	//랭킹순
+	sortRank = () => {
+		const number = this.state.itemLists.length;
+		const sortList = this.state.itemLists.slice(0, number).sort(function(a,b){
+			return a['ranking'] - b['ranking'];
+		});
+		this.setState({
+			renderList: [true,false,false],
+			itemLists : sortList
+		})
+	}
+
+	//낮은 가격순
+	sortRowPrice = () => {
+		const number = this.state.itemLists.length;
+		const sortList = this.state.itemLists.slice(0,number).sort(function(a,b){
+			return a['SellPrice'] - b['SellPrice'];
+		});
+		this.setState({
+			renderList: [false,false,true],
+			itemLists : sortList
+		})
+	}
+
+	//구매순
+	sortBuyCount = () => {
+		const number = this.state.itemLists.length;
+		const sortList = this.state.itemLists.slice(0,number).sort(function(a,b){
+			return b['BuyCount'] - a['BuyCount'];
+		});
+		this.setState({
+			renderList: [false,true,false],
+			itemLists : sortList
+		})
+	}
+	makeFreeDeliveryFunc = () => {
+		this.setState({
+			freeDeliveryToggle : !this.state.freeDeliveryToggle
+		})
+		if(!this.state.freeDeliveryToggle){
+			this.freeDeliveryFunc()
+		}else{
+			this.freeDeliveryCancelFunc()
+		}
+	}
+
+	//무료배송
+	freeDeliveryFunc = () => {
+		const number = this.state.itemLists.length;
+		const itemFreeDeliveryLists = this.state.itemLists.slice(0,number).filter((itemList) => {
+			return itemList.Delivery.DeliveryText === "무료배송"
+		});
+		this.setState({
+			itemLists : itemFreeDeliveryLists,
+			itemListsCopy : this.state.itemLists
+		})
+	}
+
+	freeDeliveryCancelFunc = () => {
+		this.setState({
+			itemLists : this.state.itemListsCopy
+		})
+	}
+
+	addFavorite = (ranking) => {
+		const changeFavorite = this.state.itemLists;
+		const index = this.state.itemLists.findIndex(todo => todo.ranking === ranking)
+		changeFavorite[index].IsFavoriteSeller = !changeFavorite[index].IsFavoriteSeller;
+		const myArray = this.state.itemLists.slice(index, index+1);
+		this.setState({
+			itemLists : changeFavorite,
+		})
+		console.log(myArray)
+	}
+	
     componentDidMount(){
-        this._callApi();
-        this._makeItemList();
+		this._callApi();
     }
 	render() {
-		let typeClass = this.state.active ? 'state--content_view_type__gallery' : 'state--content_view_type__list'
+		const {addCart} = this.props;
 		return (
-			<div id="content" className={typeClass}>
+			<div id="content" className={this.state.viewTypeNumber ? 'state--content_view_type__list' : 'state--content_view_type__gallery'}>
 				<div className="section--content_body_container">
-
-					<div id="region--content_status_information">   
-						<div className="section--module_wrap">
-							<div className="section--search_relative_information section--content_information_bar_container">
-								<div className="text--search_result">
-									<span className="text--item_count result--text_color">56,537</span>
-									<span className="text--description"><em className="result--text_color">개</em>의 검색 결과</span>
-								</div>
-								<div className="section--select_information">
-									<div className="section--select_option">
-										<button type="button" className="link--button_sort" onClick={this._typeChangeFunc.bind(this)}>정렬</button>
-										<div className="sort--option_box">
-											<ul className="sort--option_select">
-												<li className="item">
-													<a href="#" className="link">옥션랭킹순</a><button type="button" className="button--notification_advertisement">광고포함</button>
-													<span className="section--notification_advertisement">
-														<span className="text--notification_advertisement">
-														옥션랭킹순은 광고구매여부, 판매실적, 검색정확도, 고객이용행태, 서비스 품질 등을 기준으로 정렬됩니다.
-														찬스쇼핑, 파워클릭 영역은 광고입찰가순으로 전시됩니다.
-														</span>
-													</span>
-												</li>
-												<li className="item"><a href="#" className="link">판매인기순</a></li>
-												<li className="item item--active"><a href="#" className="link">낮은가격순</a></li>
-												<li className="item"><a href="#" className="link">만족도높은순</a></li>
-												<li className="item"><a href="#" className="link">신규등록순</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<button type="button" className="link--button_filter link_active">필터</button>
-							</div>
-							<ItemFilter />           
+					<ItemFilter/>
+					<div className="section--search_relative_information section--content_information_bar_container">
+						<div className="text--search_result">
+							<span className="text--item_count result--text_color">{this.state.itemLists.length}</span>
+							<span className="text--description"><em className="result--text_color">개</em>의 검색 결과</span>
 						</div>
+						<ItemSort renderList={this.state.renderList} sortRowPrice={this.sortRowPrice} sortBuyCount={this.sortBuyCount} sortRank={this.sortRank} makeItemList={this._makeItemList}/>
+						<button type="button" className="link--button_filter link_active" onClick={this.filterToggle}>필터</button>
 					</div>
-					
+					<FilterLayer filterActive={this.state.filterActive} layerClose={this.layerClose} viewTypeFunc={this.viewTypeFunc} viewTypeNumber={this.state.viewTypeNumber} makeFreeDeliveryFunc={this.makeFreeDeliveryFunc}/>
 					<div id="region--content_body">
 						<div id="section--inner_content_body_container">
 							<div className="section--module_wrap">
@@ -98,7 +169,9 @@ class Listpage extends Component {
 							</div>
 						</div>
 					</div>
-				
+					<div>
+
+					</div>
 				</div>
 			</div>
 		)
