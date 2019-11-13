@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/auction_srp/static/js/main.e9244461.chunk.js",
+    "main.js.map": "/auction_srp/static/js/main.e9244461.chunk.js.map",
+    "runtime~main.js": "/auction_srp/static/js/runtime~main.3e5b2e8e.js",
+    "runtime~main.js.map": "/auction_srp/static/js/runtime~main.3e5b2e8e.js.map",
+    "static/js/2.a08c188f.chunk.js": "/auction_srp/static/js/2.a08c188f.chunk.js",
+    "static/js/2.a08c188f.chunk.js.map": "/auction_srp/static/js/2.a08c188f.chunk.js.map",
+    "index.html": "/auction_srp/index.html",
+    "precache-manifest.ad0c2207489ff618c5ae94b6a0b9fd18.js": "/auction_srp/precache-manifest.ad0c2207489ff618c5ae94b6a0b9fd18.js",
+    "service-worker.js": "/auction_srp/service-worker.js"
+  }
+}
